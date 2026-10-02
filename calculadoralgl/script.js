@@ -34,6 +34,8 @@ botoes.forEach((btn) => {
 
         const operador = btn.dataset.operador
 
+        resultado.classList.remove("erro")
+
         const valorResultado = calcular(num1, num2, operador)
         
         resultado.textContent = "Resultado: " + valorResultado
@@ -70,6 +72,12 @@ function calcular(a, b, operador) {
             return num1 * num2
 
         case '/':
+            if (num1 === 0 && num2 === 0) {
+
+                resultado.classList.add("erro")
+        
+            }
+
             return num2 !== 0 ?
                 num1 / num2 :
                 "Erro: divisão por zero"  
