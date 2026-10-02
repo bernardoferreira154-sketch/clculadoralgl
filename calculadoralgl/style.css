@@ -90,3 +90,20 @@ body{
 
     box-shadow: 0 0 20px limegreen;
 }
+
+.resultado{
+    margin-top: 30px;
+
+    padding: 15px;
+
+    border: 2px solid lime;
+    border-radius: 5px;
+
+    color: lime;
+
+    text-align: center;
+
+    box-shadow: 0 0 20px limegreen;
+
+    display: none;
+}

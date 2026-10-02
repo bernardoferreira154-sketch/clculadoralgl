@@ -9,12 +9,14 @@ let num2 = document.getElementById("numb2").value
 
 botoes.forEach((btn) => {
 
-    btn.addEventListener(click, () => {
+    btn.addEventListener("click", () => {
 
+        const resultado = document.getElementById("resultado")
 
+        resultado.style.display = "block"
 
     })
-    
+
 })
 
 
