@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Calculadora</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <script src="script.js" defer></script>
 
     <div class="calculadora">
+
         <h1>Calculadora</h1>
 
-        
         <label>Primeiro Numero</label>
         <input type="text" id="numb1" placeholder="digite o primeiro numero">
 
-        <label>Primeiro Numero</label>
-        <input type="text" id="numb1" placeholder="digite o segundo numero">
-
+        <label>Segundo Numero</label>
+        <input type="text" id="numb2" placeholder="digite o segundo numero">
 
         <div class="sinais">
-            <button classs="btn" id="soma">+</button>
-            <button classs="btn" id="subracao">-</button>
-            <button classs="btn" id="multiplicacao">×</button>
-            <button classs="btn" id="divisao">÷</button>
+
+            <button class="btn" data-operador="+">+</button>
+
+            <button class="btn" data-operador="-">-</button>
+
+            <button class="btn" data-operador="*">×</button>
+
+            <button class="btn" data-operador="/">÷</button>
+
         </div>
 
         <div class="resultado" id="resultado">
-            Resultado:
         </div>
 
     </div>
 
 </body>
+
 </html>

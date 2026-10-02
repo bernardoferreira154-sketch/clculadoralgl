@@ -107,3 +107,11 @@ body{
 
     display: none;
 }
+
+.resultado.erro{
+    color: red;
+
+    border-color: red;
+
+    box-shadow: 0 0 20px red;
+}
